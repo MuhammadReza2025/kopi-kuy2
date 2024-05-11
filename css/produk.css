@@ -1,0 +1,48 @@
+@import url(../vendor/bootstrap/bootstrap-icons.css);
+
+body {
+    font-family: 'Poppins';
+}
+
+footer a.nav-link {
+    color: #fff;
+}
+
+footer {
+    color: #fff;
+    padding: 10px 30px;
+}
+
+section.produk {
+    min-height: 90vh;
+}
+
+.produk .card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.produk .card-title {
+    height: 45px;
+}
+
+.produk .hargasize {
+    height: 45px;
+}
+
+.btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet);
+    --bs-btn-border-color: var(--bd-violet);
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+  }
+/* Tambahan css produk tulis setelah kode ini */

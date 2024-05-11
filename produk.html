@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <title>Produk</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/produk.css">
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <style data-info="kode css bisa ditulis di bawah sini atau di css/produk.css">
+
+    </style>
+</head>
+
+<body data-info="tulis kode bootstrap di baris 22">
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/logo_kuy.png" height="40" alt="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav11"
+                aria-controls="navbarNav11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav11">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#best-seller">Best Seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#our-team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact-us">Contact Us</a>
+                    </li>
+
+                </ul>
+                <a class="btn btn-bd-primary ms-md-3"
+                    href="https://wa.me/628123456789?text=Halo Saya mau beli produk dong">
+                    <i class="bi bi-whatsapp"></i> Chat
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="riki-block produk text-center my-5 py-5">
+        <div class="container">
+            <h1>Pilih Produk Anda</h1>
+            <p class="fs-4">Kualitas terbaik biji kopi pilihan fresh diambil langsung dari petani</p>
+            <hr class="border border-dark border-3 opacity-75">
+    
+            <!-- Ini Untuk Select -->
+    
+            
+        <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="form-floating">
+                <select class="form-select" id="select_kopi">
+                    <option selected disabled>-</option>
+                    <option value="arabica">Arabica</option>
+                    <option value="robusta">Robusta</option>
+                    <option value="nonkopi">Non Kopi</option>
+                </select>
+                <label for="select_kopi">Pilih jenis kopi</label>
+            </div>
+        </div>
+        </div>
+    
+            <div id="baris_produk" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 text-center mt-5">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="riki-block footer-small py-4 bg-dark">
+        <div class="container">
+          <div class="row text-center align-items-center">
+            <div class="col">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="https://www.rikikurnia.com">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.rikikurnia.com">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.rikikurnia.com">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.rikikurnia.com">Terms</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.rikikurnia.com">About</a>
+                </li>
+              </ul>
+    
+              <p class="h5 mt-5"> ©2024 Kopi Kuy </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+var data_mentah = {}
+console.log("Isi Data mentah:", data_mentah)
+function updateSelect() {
+            select_kopi.innerHTML = `<option selected disabled>-</option>`
+            Object.keys(data_mentah).forEach(kategori => {
+                select_kopi.innerHTML += `<option value="${kategori}">${kategori}</option>`
+            })
+            console.log("Select berhasil Diganti")
+        }
+        updateSelect()
+
+        var data_kopi = []
+        select_kopi.onchange = function () {
+            var pilihan = select_kopi.value
+            console.log("Isi Pilihannya :", pilihan)
+
+            data_kopi = data_mentah[pilihan]
+            console.log("Isi Data yang dipilih :", data_kopi)
+            updateTampilan()
+        }
+
+        baris_produk.innerHTML = ''
+function updateTampilan() {
+    baris_produk.innerHTML = ''
+    data_kopi.forEach(kopi => {
+        baris_produk.innerHTML += 
+        `<div class="col mb-4">
+            <div class="card">
+                <img src="${kopi.foto}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${kopi.nama}</h5>
+                    <div class="row hargasize my-4">
+                        <div class="col">
+                             ${kopi.size}
+                        </div>
+                        <div class="col fw-bold text-dark">
+                            Rp. ${kopi.harga}
+                        </div>
+                    </div>
+                    <a target="_blank" href="${kopi.link}" class="btn btn-outline-dark w-100 opacity-100">
+                        <i class="bi bi-cart2"></i> Beli</a>
+                </div>
+            </div>
+        </div>`
+    })
+}
+
+var sumber = "https://rikikurnia.com/prakerja/api/kopi"
+var sumber2 = "data.json"
+$.getJSON(sumber2).then(data => {
+    data_mentah = data
+    updateSelect()
+})
+    </script>
+    </main>
+</body>
+</html>

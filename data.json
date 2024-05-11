@@ -1,0 +1,94 @@
+{
+    "Arabica": [
+        {
+            "foto": "images/produk/product_capuchino.jpg",
+            "nama": "Cappuccino Arabica",
+            "size": "150 Ml",
+            "harga": "20.000",
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop"
+        },
+        {
+            "foto": "images/produk/product_espresso.jpg",
+            "nama": "Pahit Arabica",
+            "size": "100 Ml",
+            "harga": "15.000",
+            "link": "https://www.google.com/search?q=pahit+arabica&tbm=shop"
+        },
+        {
+            "foto": "images/produk/product_latte.jpg",
+            "nama": "Latte Arabica",
+            "size": "150 Ml",
+            "harga": "15.000",
+            "link": "https://www.google.com/search?q=latte+arabica&tbm=shop"
+        }
+    ],
+    "Robusta": [
+        {
+            "foto": "images/produk/product_kopi_susu.jpg",
+            "nama": "Kopsus Robusta",
+            "size": "150 Ml",
+            "harga": "15.000",
+            "link": "https://www.google.com/search?q=kopi+susu+robusta&tbm=shop"
+        },
+        {
+            "foto": "images/produk/product_latte.jpg",
+            "nama": "Latte Robusta",
+            "size": "15 Ml",
+            "harga": "15.000",
+            "link": "https://www.google.com/search?q=latte+robusta&tbm=shop"
+        },
+        {
+            "foto": "https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "nama": "Latte Black Coffe",
+            "size": "180 Ml",
+            "harga": "18.000",
+            "link": "https://www.google.com/search?q=latte+black+coffe&tbm=shop"
+        }
+    ],
+    "Non Coffee": [
+        {
+            "foto": "https://asset.kompas.com/crops/qn1n1XThik6uqJ8HRDVmH27uuvg=/0x0:1000x667/750x500/data/photo/2023/03/12/640d6eac51567.jpg",
+            "nama": "Es Cendol",
+            "size": "200 Ml",
+            "harga": "15.000",
+            "link": "https://www.google.com/search?q=kopi+susu+robusta&tbm=shop"
+        },
+        {
+            "foto": "https://www.chocolatemoosey.com/wp-content/uploads/2015/06/Vanilla-Bean-Cream-Soda-Floats-6903.jpg",
+            "nama": "Float vanilla",
+            "size": "250 Ml",
+            "harga": "30.000",
+            "link": "https://www.google.com/search?q=latte+robusta&tbm=shop"
+        },
+        {
+            "foto": "https://kecipir.com/blog/wp-content/uploads/2023/03/4.jpg",
+            "nama": "Es Susu Jelly",
+            "size": "250 Ml",
+            "harga": "28.000",
+            "link": "https://www.google.com/search?q=latte+black+coffe&tbm=shop"
+        }
+    ],
+    "Snack": [
+        {
+            "foto": "https://img.kurio.network/_Ebs2rDtquiA4Cf2zJljDmjneq8=/440x440/filters:quality(80)/https://kurio-img.kurioapps.com/21/02/24/4f99af33-b3c1-47cd-a219-f1a5289f8b29.jpe",
+            "nama": "Mendoan",
+            "size": "350 Gram",
+            "harga": "22.000",
+            "link": "https://www.google.com/search?q=kopi+susu+robusta&tbm=shop"
+        },
+        {
+            "foto": "https://images.pexels.com/photos/1586942/pexels-photo-1586942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "nama": "Kentang goreng",
+            "size": "250 Gram",
+            "harga": "25.000",
+            "link": "https://www.google.com/search?q=latte+robusta&tbm=shop"
+        },
+        {
+            "foto": "https://kurio-img.kurioapps.com/21/04/11/94418944-0e09-469e-84da-402fed4ffeff.jpe",
+            "nama": "Tahu Walik",
+            "size": "250 Gram",
+            "harga": "20.000",
+            "link": "https://www.google.com/search?q=latte+black+coffe&tbm=shop"
+        }
+    ]
+}
