@@ -20,6 +20,13 @@
             "size": "150 Ml",
             "harga": "15.000",
             "link": "https://www.google.com/search?q=latte+arabica&tbm=shop"
+        },
+        {
+            "foto": "images/produk/product_kopi_susu.jpg",
+            "nama": "Kopi Susu Arabica",
+            "size": "180 Ml",
+            "harga": "25.000",
+            "link": "https://www.google.com/search?q=kopi+susu+arabica&tbm=shop"
         }
     ],
     "Robusta": [
@@ -43,6 +50,13 @@
             "size": "180 Ml",
             "harga": "18.000",
             "link": "https://www.google.com/search?q=latte+black+coffe&tbm=shop"
+        },
+        {
+            "foto": "images/produk/product_capuchino.jpg",
+            "nama": "Cappuchino Robusta",
+            "size": "150 Ml",
+            "harga": "20.000",
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop"
         }
     ],
     "Non Coffee": [
@@ -63,6 +77,13 @@
         {
             "foto": "https://kecipir.com/blog/wp-content/uploads/2023/03/4.jpg",
             "nama": "Es Susu Jelly",
+            "size": "250 Ml",
+            "harga": "28.000",
+            "link": "https://www.google.com/search?q=latte+black+coffe&tbm=shop"
+        },
+        {
+            "foto": "images/produk/jusmangga.jpg",
+            "nama": "Jus Mangga",
             "size": "250 Ml",
             "harga": "28.000",
             "link": "https://www.google.com/search?q=latte+black+coffe&tbm=shop"

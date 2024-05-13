@@ -6,11 +6,27 @@ body {
 
 footer a.nav-link {
     color: #fff;
+    background-color: #634832;
 }
-
+nav{
+    background-color: #634832;
+    box-shadow: 0 3px 7px -2px #000;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+body a.nav-link {
+    color: #fff;
+ }
+ 
+ body a.btn {
+    color: #fff;
+    background-color: #38220f;
+ }
 footer {
     color: #fff;
     padding: 10px 30px;
+    background-color: #634832;
 }
 
 section.produk {

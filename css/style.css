@@ -22,7 +22,7 @@ header{
    align-items: center;
    justify-content: center;
    flex-wrap: wrap;
-   background-color: papayawhip;
+   background-color: #EEE6DC;
 }
 section,
 footer {
@@ -141,14 +141,11 @@ nav {
    untuk pengguna vscode silahkan arahkan mouse ke kotak warna di bawah
    untuk mengganti warna sesuai keinginan
    */
-   background-color: #198754;
-
+   background-color: #634832;
    /* box-shadow membuat efek bayangan */
    box-shadow: 0 3px 7px -2px #000;
-
    /* width mengatur lebar elemen. 100% agar lebarnya full dari kiri sampai kanan layar */
    width: 100%;
-
    /* 
    padding digunakan untuk memberi jarak ke dalam. 
    efeknya bila digunakan pada elemen yang memiliki warna latar akan membuat elemen tersebut 'gemuk'
@@ -157,15 +154,21 @@ nav {
    */
    padding-top: 10px;
    padding-bottom: 10px;
-
    /* 
    position mengatur posisi elemen, position:fixed supaya elemen nav akan ikut menempel di atas layar
    saat kita scroll ke bawah. Jika ingin navigasi gak nempel, bisa menggunakan position:static;
    */
    position: fixed;
-
    /* Nilai z-index semakin besar, maka elemen akan semakin di depan */
    z-index: 500;
+}
+body a.nav-link {
+   color: #fff;
+}
+
+body a.btn {
+   color: #fff;
+   background-color: #38220f;
 }
 
 img.logo {
@@ -192,7 +195,7 @@ a.shop {
 
 a.chat {
    margin-right: 30px;
-   background-color: rgb(8, 69, 8);
+   background-color: #38220f;
    color: #fff;
    padding-top: 5px;
    padding-right: 15px;
@@ -238,6 +241,7 @@ header div.kanan {
 header h1 {
    margin-bottom: 20px;
 }
+
 
 header p {
    /* font-size digunakan untuk mengatur ukuran huruf */
@@ -426,7 +430,7 @@ div.team img {
    aspect-ratio: 1/1;
    object-fit: cover;
    box-shadow: 0 3px 10px -2px #000;
-   border-radius: 50px 0px 50px 0px;
+   border-radius: 50px 50px 50px 50px;
    margin-bottom: 10px;
 }
 
@@ -440,7 +444,6 @@ section.review {
       membuat gambar latar belakang tidak terpotong
    */
    background-size: contain;
-
    /* 
       background-repeat: no-repeat;
       membuat gambar latar belakang tidak diulang (duplikat)
@@ -511,6 +514,86 @@ div.testimoni>p {
    text-decoration: line-through;
 }
 
+section.promo{
+   background-image: url("../images/produk/pexelcoffe.jpg");
+   background-size: cover;
+   background-position: center;
+  text-align: center;
+  height: 100%;
+  justify-content: space-around;
+}
+
+section.promo h2{
+   margin-bottom: 20px;
+   width: 100%;
+   -webkit-backdrop-filter: blur(8px);
+   backdrop-filter: blur(8px);
+   color: #fff;
+   text-decoration: solid;
+   font-weight: bold;
+}
+section.promo>p {
+   margin-bottom: 15px;
+   font-size: 18px;
+   width: 800px;
+   max-width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   color: #fff;
+   text-decoration: solid;
+   -webkit-backdrop-filter: blur(8px);
+   backdrop-filter: blur(8px);
+   
+}
+
+div.promoclass {
+   width: 50%;
+   padding: 20px;
+}
+
+div.promoclass img {
+   width: 100%;
+   aspect-ratio: 1/1;
+   object-fit: cover;
+   box-shadow: 0 3px 10px -2px #000;
+   border-radius: 0px 0px 0px 0px;
+}
+
+.bottom-left {
+   position: absolute;
+   bottom: 8px;
+   left: 16px;
+ }
+ 
+ /* Top left text */
+ .top-left {
+   position: absolute;
+   top: 8px;
+   left: 16px;
+ }
+ 
+ /* Top right text */
+ .top-right {
+   position: absolute;
+   top: 8px;
+   right: 16px;
+ }
+ 
+ /* Bottom right text */
+ .bottom-right {
+   position: absolute;
+   bottom: 8px;
+   right: 16px;
+ }
+ 
+ /* Centered text */
+ .centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
 /* CONTACT US */
 section.contact-us {
    margin-bottom: 20px;
@@ -525,7 +608,7 @@ section.contact-us iframe {
 div.kontak {
    width: 30%;
    /* color mengatur warna tulisan */
-   color: green;
+   color: #38220f;
    text-align: center;
    margin-top: 50px;
 }
@@ -534,7 +617,7 @@ div.kontak {
 /* FOOTER */
 
 footer{
-   background-color: #198754;
+   background-color: #967259;
    padding-top: 15px;
    padding-bottom: 15px;
    color: #fff;

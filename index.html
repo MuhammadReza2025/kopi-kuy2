@@ -6,26 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Website Kopi Kuy</title>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <title>Kopi Kuy</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav>
-        <img class="logo" src="images/logo/logo_kuy.png">
-        <div class="navigasi">
-            <a href="#best-seller">Best Seller</a>
-            <a href="#our-team">Our Team</a>
-            <a href="#review">Review</a>
-            <a href="#contact-us">Contact Us</a>
-        </div>
-        <a class="shop" href="produk.html">Shop</a>
-        <a class="chat" href="https://wa.me/628123456?text=Saya ingin bertanya" target="_blank">Chat</a>
-    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/logo_kuy.png" height="40" alt="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav11"
+                aria-controls="navbarNav11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav11">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#best-seller">Best Seller</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#promo">Promo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#our-team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact-us">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produk.html">Shop</a>
+                    </li>
 
+                </ul>
+                <a class="btn btn-bd-primary ms-md-3"
+                    href="https://wa.me/628123456789?text=Halo Saya mau beli produk dong">
+                    <i class="bi bi-whatsapp"></i> Chat
+                </a>
+            </div>
+        </div>
+    </nav>
+    
     <!--Tulis kode header mulai di baris 28-->
     
-    <header>
+    <header id="home">
+        <marquee class="jalan" behavior="scroll" direction="left">PROMO SETIAP HARI KOPI KUY BELI 3 COFFEE GRATIS 1! </marquee>
         <div class="kiri">
             <h1 id="h1_website">
                 Kopi Kuy <img src="images/icon/icon_kopi.svg" alt="logo kopi">
@@ -42,7 +72,7 @@
         </div>
 
         <div class="kanan">
-            <img src="images/header/header1.png" alt="gambar header">
+            <img src="images/header/header3.png" alt="gambar header">
         </div>
     </header>
 
@@ -70,8 +100,31 @@
         </div>
 </section>
 
-<section class="about-us" id="about-us">
+<section class="promo" id="promo">
+    <h2>
+        Promo Kopi Kuy!
+    </h2>
+    <p>
+        Jaminan rasa mantap. Biji kopinya langsung dari petani lokal Nusantara.
+    </p>
+<div class="promoclass">
+    <img src="images/background/Promo1.jpg" alt="">
 
+</div>
+<div class="promoclass">
+    <img src="images/background/Promo2.jpg" alt="">
+
+</div>
+<div class="promoclass">
+    <img src="images/background/Promo3.jpg" alt="">
+
+</div>
+<div class="promoclass">
+    <img src="images/background/Promo4.jpg" alt="">
+</div>
+</section>
+
+<section class="about-us" id="about-us">
 <h2>Gak Ngopi Gak Kuy!</h2>
 <p>
     Didirikan pada 2017, Kopi Kuy merupakan sebuah startup kopi retail 
@@ -119,7 +172,7 @@
 </section>
 
 
-<section class="review">
+<section class="review" id="review">
     <h2>Apa Kata Mereka?</h2>
     <p>Kami berikan fakta dan data, karena kepuasan konsumen selalu nomer 1
         untuk kami.
@@ -159,8 +212,7 @@
     </div>
 </section>
 
-
-<section class="contact-us">
+<section class="contact-us" id="contact-us">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.741866032694!2d106.668581!3d-6.214715!3m2
     !1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9912c7f297b%3A0xe5a3a671dae861ab!2sKopi%20kuy!5e0!3m2!1sid!2sid!4v168061722
     9460!5m2!1sid!2sid"
